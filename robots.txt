@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cristhian-d-bogado.github.io/Infinity-Hub-GitHub/sitemap.xml
