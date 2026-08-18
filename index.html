@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="logo">
+            <h1>Infinity Hub</h1>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <button id="modo-oscuro">🌙</button>
+
+            <button id="abrir-carrito">🛒 <span
+            id="cantidadHeader">0</span>
+            </button>
+
+        </div>
+    </header>
+
+    <header>
+
+    <h1>Infinity Hub</h1>
+
+    <p>La mejor tienda de tecnología y accesorios.</p>
+
+
+
+</header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="banner">
+
+    <div class="slide activo">
+        <h2>¡Bienvenido a Infinity Hub!</h2>
+        <p>Las mejores ofertas en tecnología y accesorios.</p>
+        <button>Ver ofertas</button>
+    </div>
+
+    <div class="slide">
+        <h2>⌚ Relojes en Oferta</h2>
+        <p>Hasta 30% de descuento por tiempo limitado.</p>
+        <button>Comprar ahora</button>
+    </div>
+
+    <div class="slide">
+        <h2>📱 Smartwatch</h2>
+        <p>La mejor tecnología al mejor precio.</p>
+        <button>Ver productos</button>
+    </div>
+
+</section>
+
+    <section class="destacados">
+    <h2>⭐ Productos Destacados</h2>
+
+    <div class="destacados-grid">
+        <div class="destacado">
+            <h3>🔥 Smartwatch</h3>
+            <p>20% de descuento esta semana.</p>
+        </div>
+
+        <div class="destacado">
+            <h3>🎧 Audífonos Bluetooth</h3>
+            <p>Envío gratis a todo el país.</p>
+        </div>
+
+        <div class="destacado">
+            <h3>📱 Smartphones</h3>
+            <p>Nuevos modelos disponibles.</p>
+        </div>
+    </div>
+</section>
+
+    <section class="buscador">
+        <input type="text" id="buscar" placeholder="Buscar productos...">
+    </section>
+
+    <section class="categorias">
+        <button data-categoria="todos">Todos</button>
+        <button data-categoria="relojes">Relojes</button>
+        <button data-categoria="smartwatch">Smartwatch</button>
+        <button data-categoria="cargadores">Cargadores</button>
+        <button data-categoria="celulares">Celulares</button>
+        <button data-categoria="audifonos">Audifonos</button>
+    </section>
+
+    <section id="carrito">
+        <button id="cerrar-carrito">❌</button>
+        <h2>🛒 Carrito de Compras</h2>
+
+        <p>Productos: <span id="cantidad">0</span></p>
+
+        <p>Total: Gs. <span id="total">0</span></p>
+
+        <ul id="lista-carrito"></ul>
+
+        <button id="vaciar-carrito">Vaciar carrito</button>
+
+        <button id="finalizar-compra">📲 Comprar por WhatsApp</button>
+    </section>
+
+    <div class="favoritos">
+        <h2>❤️Mis Favoritos</h2>
+        <ul id="lista-favoritos"></ul>
+    </div>
+
+    <h2 id="productos">Nuestros Productos</h2>
+
+    <div class="productos" id="lista-productos">
+
+</div>
+
+    <footer id="contacto">
+    <p>© 2026 Infinity Hub | Todos los derechos reservados.</p>
+    <p>📧 infinityhub997@gmail.com</p>
+    <p>📱 +595 983 157 394</p>
+</footer>
+
+
+
+    <div id="modal" class="modal">
+
+    <div class="modal-contenido">
+
+        <span id="cerrar-modal">&times;</span>
+
+        <div class="galeria-modal">
+
+            <button id="imagen-anterior" class="flecha-modal">
+                ❮
+            </button>
+
+            <img id="modal-imagen" src="" alt="Producto">
+
+            <button id="imagen-siguiente" class="flecha-modal">
+                ❯
+            </button>
+
+        </div>
+
+        <div id="indicador-imagenes" class="indicador-imagenes"></div>
+
+        <h2 id="modal-titulo"></h2>
+
+        <p id="modal-precio"></p>
+
+        <p id="modal-descripcion"></p>
+
+    </div>
+
+</div>
+
+
+    <div id="fondo-carrito"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+
+<script src="productos.js"></script>
+<script src="script.js"></script>
+<script src="carrito.js"></script>
+
+</body>
+
+</html>

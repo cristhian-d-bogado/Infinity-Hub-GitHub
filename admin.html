@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Infinity Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header class="admin-header">
+
+    <div class="admin-marca">
+        <h1>Infinity <span>Hub</span></h1>
+        <p>ADMIN</p>
+    </div>
+
+    <div class="admin-acciones-header">
+
+    <button id="modo-oscuro-admin" class="btn-modo-admin">
+        🌙
+    </button>
+
+    <button id="cerrar-sesion-admin" class="btn-cerrar-admin">
+        🚪 Cerrar sesión
+    </button>
+
+</div>
+    
+</header>
+
+<main class="admin-contenido">
+
+    <h1>Panel de Administración</h1>
+
+    <section class="admin-seccion">
+
+    <div class="admin-seccion-titulo">
+        <h2>Agregar nuevo producto</h2>
+        <p>Completa los datos para agregar un producto a la tienda.</p>
+    </div>
+
+    <div class="admin-tarjeta">
+
+        <form id="form-producto">
+
+        <input 
+    type="text" 
+    id="nombre" 
+    placeholder="Nombre del producto" 
+    required>
+
+<input 
+    type="number" 
+    id="precio" 
+    placeholder="Precio" 
+    required>
+
+<input 
+    type="file" 
+    id="imagen" 
+    accept="image/*"
+    multiple>
+
+
+    <div id="imagenes-actuales"></div>
+
+
+    <textarea
+    id="descripcion"
+    rows="4"
+    placeholder="Descripción del producto"
+    ></textarea>
+
+
+<input 
+    type="text" 
+    id="categoria" 
+    placeholder="Categoría">
+
+
+    <select id="disponibilidad">
+
+    <option value="Disponible">
+        Disponible
+    </option>
+
+    <option value="Agotado">
+        Agotado
+    </option>
+
+</select>
+
+<button 
+    type="submit" 
+    class="btn-agregar-producto">
+    + Agregar producto
+</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <section class="admin-seccion">
+
+    <div class="admin-seccion-titulo">
+        <h2>Productos Registrados</h2>
+        <p>Administra los productos disponibles en la tienda.</p>
+    </div>
+
+    <div class="admin-tarjeta">
+        <div id="lista-admin"></div>
+    </div>
+
+</section>
+
+    <h2>Pedidos realizados</h2>
+
+<div id="lista-pedidos"></div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="pedidos-admin.js"></script>
+<script src="admin.js"></script>
+
+</body>
+
+</html>

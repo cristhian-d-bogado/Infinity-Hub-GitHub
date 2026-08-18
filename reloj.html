@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj para Hombre - Infinity Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Infinity Hub</h1>
+        <p>La mejor tecnología y accesorios</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#productos">Productos</a>
+        <a href="index.html">Contacto</a>
+    </nav>
+
+    <main class="detalle-producto">
+
+    <div class="imagen-producto">
+        <img src="imagenes/reloj.jpg" alt="Reloj para Hombre">
+    </div>
+
+    <div class="info-producto">
+        <h2>Reloj para Hombre</h2>
+
+        <p><strong>Precio:</strong> Gs. 450.000</p>
+
+        <p>
+            Elegante reloj para hombre con diseño moderno,
+            resistente y perfecto para el uso diario.
+        </p>
+
+        <h3>Características</h3>
+
+        <ul>
+            <li>⌚ Correa de acero inoxidable</li>
+            <li>💧 Resistente al agua</li>
+            <li>🔋 Batería de larga duración</li>
+            <li>🛡️ Garantía de 3 meses</li>
+        </ul>
+
+        <button id="comprar-reloj" class="btn-comprar">Comprar ahora</button>
+
+    </div>
+
+</main>
+<script src="script.js"></script>
+
+<script src="carrito.js"></script>
+
+<script>
+
+const botonComprar = document.getElementById("comprar-reloj");
+
+botonComprar.addEventListener("click", function () {
+
+    agregarAlCarrito("Reloj para Hombre", 450000);
+
+    alert("¡Producto agregado al carrito!");
+
+    window.location.href = "index.html";
+
+});
+
+</script>
+
+
+</body>
+
+</html>
