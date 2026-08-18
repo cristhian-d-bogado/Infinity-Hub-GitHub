@@ -1296,3 +1296,30 @@ body.oscuro #modal-descripcion {
     color: #e0e0e0;
 }
 
+
+
+
+.sobre-infinity {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 35px 30px;
+    background: linear-gradient(135deg, #07162f, #0b2a55);
+    border: 1px solid rgba(0, 153, 255, 0.35);
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.15);
+    text-align: center;
+}
+
+.sobre-infinity h2 {
+    margin-bottom: 18px;
+    color: #38bdf8;
+    font-size: 2rem;
+}
+
+.sobre-infinity p {
+    margin: 0;
+    color: #e5e7eb;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
